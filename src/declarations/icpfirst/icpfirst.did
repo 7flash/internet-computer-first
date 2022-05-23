@@ -1,0 +1,4 @@
+service : {
+  deposit: (int) -> (int);
+  withdraw: (int) -> (int);
+}

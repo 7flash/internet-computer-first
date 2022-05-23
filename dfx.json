@@ -1,0 +1,36 @@
+{
+  "canisters": {
+    "icpfirst": {
+      "main": "src/icpfirst/main.mo",
+      "type": "motoko",
+      "name": "ICP First"
+    },
+    "icpfirst_assets": {
+      "dependencies": [
+        "icpfirst"
+      ],
+      "frontend": {
+        "entrypoint": "src/icpfirst_assets/src/index.html"
+      },
+      "source": [
+        "src/icpfirst_assets/assets",
+        "dist/icpfirst_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.10.0",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
